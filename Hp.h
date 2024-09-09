@@ -4,17 +4,25 @@ class Hp {
 
 public:
     bool setmaxHP(hptype new_max_hp) {
-        if (new_max_hp < 1) {
+        if (new_max_hp < 1)
             return false;
 
-            MaxHP = new_max_hp;
+        MaxHP = new_max_hp;
 
-            if (CurrentHP > MaxHP) {
-                CurrentHP = MaxHP;
+        if (CurrentHP > MaxHP)
+            CurrentHP = MaxHP;
 
-                return true;
-            }
+        return true;
+    }
+
+    // ƒ_ƒ[ƒW—Ê
+    void takeDamage(hptype damage) {
+        if (damage > CurrentHP) {
+            CurrentHP = 0;
+            return;
         }
+
+        CurrentHP -= damage;
     }
 
 private:
