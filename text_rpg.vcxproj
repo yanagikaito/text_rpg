@@ -130,8 +130,10 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hitpointtypes.h" />
+    <ClInclude Include="Hitpointtypes.h" />
     <ClInclude Include="Hp.h" />
+    <ClInclude Include="Statblock.h" />
+    <ClInclude Include="Stattypes.h" />
     <ClInclude Include="Warrior.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
