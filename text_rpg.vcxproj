@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="hitpointtypes.h" />
     <ClInclude Include="Hp.h" />
+    <ClInclude Include="Warrior.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

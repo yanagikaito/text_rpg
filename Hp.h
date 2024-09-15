@@ -2,6 +2,22 @@
 
 class Hp {
 
+private:
+
+    hptype CurrentHP;
+
+    // 32ビットの符号なし整数型。
+    hptype MaxHP;
+
+public:
+
+    Hp() { CurrentHP = 1; MaxHP = 1; }
+
+    Hp(hptype cHP, hptype mHP) :
+        CurrentHP(cHP), MaxHP(mHP) {
+        if (CurrentHP > MaxHP) CurrentHP = MaxHP;
+    }
+
 public:
     bool setmaxHP(hptype new_max_hp) {
         if (new_max_hp < 1)
@@ -45,13 +61,4 @@ public:
     hptype getCurrentHP() {
         return CurrentHP;
     }
-
-private:
-
-    hptype ShieldDefenseHP;
-
-    hptype CurrentHP;
-
-    // 32ビットの符号なし整数型。
-    hptype MaxHP;
 };
