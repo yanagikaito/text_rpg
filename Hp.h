@@ -38,6 +38,14 @@ public:
         CurrentHP += amount;
     }
 
+    hptype getMaxHP() {
+        return MaxHP;
+    }
+
+    hptype getCurrentHP() {
+        return CurrentHP;
+    }
+
 private:
 
     hptype ShieldDefenseHP;
