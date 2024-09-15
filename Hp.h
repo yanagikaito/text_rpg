@@ -25,6 +25,19 @@ public:
         CurrentHP -= damage;
     }
 
+    void heal(hptype amount) {
+
+        // Å‘åHP‚æ‚è—Ê‚ÆŒ»İ‚ÌHP‚ª‘å‚«‚¢ê‡
+        // Å‘åHP‚ğ’´‚¦‚Ä‚Ì‰ñ•œ‚Í‚Å‚«‚È‚¢B
+        if (amount + CurrentHP > MaxHP) {
+            CurrentHP = MaxHP;
+            return;
+        }
+
+        // Œ»İ‚ÌHP‚ğ‰ñ•œ‚·‚éB
+        CurrentHP += amount;
+    }
+
 private:
 
     hptype ShieldDefenseHP;
