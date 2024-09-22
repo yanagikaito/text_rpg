@@ -1,4 +1,6 @@
 #include "hitpointtypes.h"
+#ifndef HP_H
+#define HP_H
 
 class Hp {
 
@@ -62,3 +64,4 @@ public:
         return CurrentHP;
     }
 };
+#endif // HP_H
