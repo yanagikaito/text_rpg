@@ -130,6 +130,7 @@
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Cleric.h" />
     <ClInclude Include="Hitpointtypes.h" />
     <ClInclude Include="Hp.h" />
     <ClInclude Include="Statblock.h" />
