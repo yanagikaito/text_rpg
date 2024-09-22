@@ -135,6 +135,7 @@
     <ClInclude Include="Statblock.h" />
     <ClInclude Include="Stattypes.h" />
     <ClInclude Include="Warrior.h" />
+    <ClInclude Include="Wizard.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
