@@ -1,30 +1,21 @@
 #include <iostream>
 #include <stdlib.h>
-
-// マップ表示する関数
-void drawMap(int rows, int cols, int** p) {
-    for (int r = 0; r < rows; r++) {
-        for (int c = 0; c < cols; c++) {
-            std::cout << "■";
-        }
-        std::cout << std::endl;
-    }
-}
+#include "Allclasses.h"
 
 int main() {
 
-    const int rows = 20;
-    const int cols = 20;
+    Warrior warr1;
 
-    // 2次元配列初期化
-    int map[rows][cols]{};
+    Wizard wiz1;
 
-    int** p = new int* [rows];
+    Cleric cler1;
 
-    // 各行の先頭アドレスを入れる。
-    for (int r = 0; r < rows; r++) p[r] = map[r];
+    Rogue rog1;
 
-    drawMap(rows, cols, p);
-    delete[]p;
+    std::cout << "Warrior\n"
+        << "-MaxHP:" << warr1.getMaxHP() << '\n'
+        << "-Strength:" << warr1.getStrength() << '\n'
+        << "-Intellect:" << warr1.getIntellect() << '\n';
 
+    return 0;
 }
