@@ -10,5 +10,6 @@ public:
     Warrior() : Hp(HPGROWTH, HPGROWTH), StatBlock(BASESTR, BASEINT) {
 
     }
+
 private:
 };

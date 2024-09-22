@@ -1,4 +1,6 @@
 #include "Stattypes.h"
+#ifndef STATBLOCK_H
+#define STATBLOCK_H
 
 class StatBlock {
     stattype Strength; // 0xFF
@@ -16,3 +18,4 @@ public:
     stattype getStrength() { return Strength; }
     stattype getIntellect() { return Intellect; }
 };
+#endif // STATBLOCK_H
