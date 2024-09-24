@@ -15,6 +15,9 @@ public:
     explicit StatBlock(stattype s, stattype i) :
         Strength(s), Intellect(i) {
     }
+
+    virtual void putStatus() = 0;
+
     stattype getStrength() { return Strength; }
     stattype getIntellect() { return Intellect; }
 };
