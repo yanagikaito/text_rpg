@@ -1,6 +1,7 @@
 #include "Hp.h"
 #include "Statblock.h"
-class Cleric :public Hp, public StatBlock {
+#include "LevelSystem.h"
+class Cleric :public Hp, public StatBlock, public LevelSystem {
 
 public:
     static const hptype HPGROWTH = (hptype)14u;

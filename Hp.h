@@ -1,4 +1,5 @@
-#include "hitpointtypes.h"
+#include <cstdint>
+typedef std::uint16_t hptype;
 #ifndef HP_H
 #define HP_H
 
