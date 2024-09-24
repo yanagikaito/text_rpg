@@ -132,11 +132,10 @@
   <ItemGroup>
     <ClInclude Include="Allclasses.h" />
     <ClInclude Include="Cleric.h" />
-    <ClInclude Include="Hitpointtypes.h" />
     <ClInclude Include="Hp.h" />
+    <ClInclude Include="LevelSystem.h" />
     <ClInclude Include="Rogue.h" />
     <ClInclude Include="Statblock.h" />
-    <ClInclude Include="Stattypes.h" />
     <ClInclude Include="Warrior.h" />
     <ClInclude Include="Wizard.h" />
   </ItemGroup>

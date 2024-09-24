@@ -1,4 +1,5 @@
-#include "Stattypes.h"
+#include <cstdint>
+typedef std::uint16_t stattype;
 #ifndef STATBLOCK_H
 #define STATBLOCK_H
 
