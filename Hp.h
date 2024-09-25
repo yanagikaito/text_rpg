@@ -22,7 +22,7 @@ public:
     }
 
 public:
-    bool setmaxHP(hptype new_max_hp) {
+    bool setMaxHP(hptype new_max_hp) {
         if (new_max_hp < 1)
             return false;
 

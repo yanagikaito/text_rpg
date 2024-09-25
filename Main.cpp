@@ -4,21 +4,26 @@
 
 int main() {
 
-    Warrior warr1;
+    /*  Warrior warr1;
 
-    Wizard wiz1;
+      Wizard wiz1;*/
 
     Cleric cler1;
 
-    Rogue rog1;
+    /*  Rogue rog1;*/
 
-    warr1.putStatus();
+      //warr1.putStatus();
 
-    wiz1.putStatus();
+      //wiz1.putStatus();
 
-    cler1.putStatus();
+    for (int i = 0; i < 2; i++) {
 
-    rog1.putStatus();
+        cler1.putStatus();
+
+        if (i < 1)
+            cler1.gainEXP(100u);
+    }
+    /* rog1.putStatus();*/
 
     return 0;
 }
